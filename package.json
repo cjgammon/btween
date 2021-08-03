@@ -1,0 +1,22 @@
+{
+  "name": "btween",
+  "version": "1.0.0",
+  "description": "tween lib",
+  "main": "btween.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjgammon/btween.git"
+  },
+  "author": "cjgammon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjgammon/btween/issues"
+  },
+  "homepage": "https://github.com/cjgammon/btween#readme",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}
