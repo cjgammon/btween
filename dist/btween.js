@@ -92,25 +92,25 @@ var Tween = /** @class */ (function () {
 /**
  * Tween Manager class
  */
-var Tw = /** @class */ (function () {
-    function Tw() {
+var Btween = /** @class */ (function () {
+    function Btween() {
     }
-    Tw.to = function (target, vars) {
+    Btween.to = function (target, vars) {
         var tw = new Tween(target, vars);
         this.tweens.push(tw);
     };
-    Tw.set = function (target, vars) {
+    Btween.set = function (target, vars) {
         for (var i in vars) {
             if (target.hasOwnProperty(i)) {
                 target[i] = vars[i];
             }
         }
     };
-    Tw.fromTo = function (target, fromVars, toVars) {
+    Btween.fromTo = function (target, fromVars, toVars) {
         this.set(target, fromVars);
         this.to(target, toVars);
     };
-    Tw.update = function () {
+    Btween.update = function () {
         var i = this.tweens.length;
         while (i--) {
             var tween = this.tweens[i];
@@ -122,6 +122,6 @@ var Tw = /** @class */ (function () {
             }
         }
     };
-    Tw.tweens = [];
-    return Tw;
+    Btween.tweens = [];
+    return Btween;
 }());
